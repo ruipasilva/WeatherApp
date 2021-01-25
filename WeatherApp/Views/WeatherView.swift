@@ -37,15 +37,15 @@ struct WeatherView: View {
                 Text("Feels like:")
                 Text("\(viewModel.data.current.feelsLike)º")
             }
-//            HStack {
-//                Text("Yesterday")
-//                Text("0º")
-//                Image(systemName: "cloud.sun.fill")
-//                    .renderingMode(.original)
-//            }
-//            .font(.title3)
-//            .padding(.top, 40)
-//        }
+            HStack {
+                Text("Yesterday")
+                Text("0º")
+                Image(systemName: "cloud.sun.fill")
+                    .renderingMode(.original)
+            }
+            .font(.title3)
+            .padding(.top, 40)
+        }
     }
 }
 
