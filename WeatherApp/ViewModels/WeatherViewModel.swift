@@ -45,7 +45,7 @@ class WeatherViewModel: ObservableObject{
         case 113:
             if data.current.isDay == "yes" {
                 return "sun.max.fill" } else {
-                return "moon.stars"
+                return "moon.stars.fill"
             }
         case 116:
             if data.current.isDay == "yes" {
