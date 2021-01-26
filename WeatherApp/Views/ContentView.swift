@@ -16,9 +16,9 @@ struct ContentView: View {
     var body: some View {
             ZStack {
                 if viewModel.data.current.isDay == "no"{
-                LinearGradient(gradient: Gradient(colors: [.gray, .white]), startPoint: .top, endPoint: .bottom)
+                    LinearGradient(gradient: Gradient(colors: [.nightClearSkyTop, .nightClearSkyBottom]), startPoint: .top, endPoint: .bottom)
                 } else {
-                    LinearGradient(gradient: Gradient(colors: [.blue, .white]), startPoint: .top, endPoint: .bottom)
+                    LinearGradient(gradient: Gradient(colors: [.dayClearSkyTop, .dayClearSkyBottom]), startPoint: .top, endPoint: .bottom)
                 }
                 WeatherView(viewModel: viewModel)
                             .onAppear() {
