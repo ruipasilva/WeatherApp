@@ -19,6 +19,7 @@
 		695BD0EB25BF2F1A00F08176 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695BD0EA25BF2F1A00F08176 /* LoadingView.swift */; };
 		695BD0EE25BF334300F08176 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695BD0ED25BF334300F08176 /* Alerts.swift */; };
 		695BD0FC25BF65CD00F08176 /* SunsetSunriseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695BD0FB25BF65CD00F08176 /* SunsetSunriseData.swift */; };
+		695BD10025BF868200F08176 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695BD0FF25BF868200F08176 /* Color+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		695BD0EA25BF2F1A00F08176 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		695BD0ED25BF334300F08176 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		695BD0FB25BF65CD00F08176 /* SunsetSunriseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunsetSunriseData.swift; sourceTree = "<group>"; };
+		695BD0FF25BF868200F08176 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				695BD0F025BF641700F08176 /* Views */,
 				695BD0F225BF641F00F08176 /* ViewModels */,
 				695BD0F525BF643A00F08176 /* Models */,
+				695BD10225BF868A00F08176 /* Extensions */,
 				695BD0F925BF645E00F08176 /* Network Managers */,
 				695BD0F725BF644600F08176 /* Errors */,
 				695BD0C625BB32D300F08176 /* Assets.xcassets */,
@@ -131,6 +134,14 @@
 				695BD0D625BB331F00F08176 /* NetworkManager.swift */,
 			);
 			path = "Network Managers";
+			sourceTree = "<group>";
+		};
+		695BD10225BF868A00F08176 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				695BD0FF25BF868200F08176 /* Color+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +220,7 @@
 				695BD0D325BB32E400F08176 /* WeatherData.swift in Sources */,
 				695BD0FC25BF65CD00F08176 /* SunsetSunriseData.swift in Sources */,
 				695BD0EB25BF2F1A00F08176 /* LoadingView.swift in Sources */,
+				695BD10025BF868200F08176 /* Color+Ext.swift in Sources */,
 				695BD0E825BEDF4900F08176 /* WeatherView.swift in Sources */,
 				695BD0EE25BF334300F08176 /* Alerts.swift in Sources */,
 				695BD0C325BB32D200F08176 /* WeatherAppApp.swift in Sources */,
