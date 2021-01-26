@@ -40,12 +40,12 @@ struct WeatherView: View {
                 Text("\(viewModel.data.current.feelsLike)º")
             }
             .foregroundColor(.white)
-            HStack {
-                Text("Yesterday")
-                Text("0º")
-                Image(systemName: "cloud.sun.fill")
-                    .renderingMode(.original)
-            }
+//            HStack {
+//                Text("Yesterday")
+//                Text("0º")
+//                Image(systemName: "cloud.sun.fill")
+//                    .renderingMode(.original)
+//            }
             .font(.title3)
             .foregroundColor(.white)
             .padding(.top, 40)
