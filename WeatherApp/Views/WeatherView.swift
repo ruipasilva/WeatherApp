@@ -14,15 +14,16 @@ struct WeatherView: View {
     var body: some View {
         VStack {
             Text(viewModel.data.location.name)
-                .font(.system(size: 70, weight: .bold))
-                .fontWeight(.semibold)
+                .font(.system(size: 50))
+                .fontWeight(.regular)
                 .foregroundColor(.white)
                 .padding(.bottom, 2)
             ForEach(viewModel.data.current.weatherDescriptions, id: \.self) { _ in
                 Text(viewModel.switchDescription())
                     .fontWeight(.medium)
                     .multilineTextAlignment(.center)
-                    .font(.title3)
+                    .font(.body)
+                    .foregroundColor(.white)
             }
             .padding(.bottom)
             Image(systemName: viewModel.switchCode())
@@ -31,12 +32,14 @@ struct WeatherView: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 120, height: 120)
             Text("\(viewModel.data.current.temperature)º")
-                .font(.system(size: 50))
+                .font(.system(size: 70))
                 .bold()
+                .foregroundColor(.white)
             HStack {
-                Text("Feels like:")
+                Text("Feels like")
                 Text("\(viewModel.data.current.feelsLike)º")
             }
+            .foregroundColor(.white)
             HStack {
                 Text("Yesterday")
                 Text("0º")
@@ -44,6 +47,7 @@ struct WeatherView: View {
                     .renderingMode(.original)
             }
             .font(.title3)
+            .foregroundColor(.white)
             .padding(.top, 40)
         }
     }
@@ -54,6 +58,7 @@ struct WeatherView_Previews: PreviewProvider {
         Group {
             WeatherView()
                 .preferredColorScheme(.dark)
+                
         }
     }
 }
