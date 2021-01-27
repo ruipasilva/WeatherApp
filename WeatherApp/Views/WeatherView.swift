@@ -46,9 +46,9 @@ struct WeatherView: View {
 //                Image(systemName: "cloud.sun.fill")
 //                    .renderingMode(.original)
 //            }
-            .font(.title3)
-            .foregroundColor(.white)
-            .padding(.top, 40)
+//            .font(.title3)
+//            .foregroundColor(.white)
+//            .padding(.top, 40)
         }
     }
 }
