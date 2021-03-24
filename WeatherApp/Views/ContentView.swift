@@ -15,7 +15,7 @@ struct ContentView: View {
     
     var body: some View {
             ZStack {
-                if viewModel.data.current.isDay == "no"{
+                if viewModel.data.current.isDay == "no" {
                     LinearGradient(gradient: Gradient(colors: [.nightClearSkyTop, .nightClearSkyBottom]), startPoint: .top, endPoint: .bottom)
                 } else {
                     LinearGradient(gradient: Gradient(colors: [.dayClearSkyTop, .dayClearSkyBottom]), startPoint: .top, endPoint: .bottom)
@@ -33,10 +33,7 @@ struct ContentView: View {
             .alert(item: $viewModel.alertItem) { (alertItem) -> Alert in
                 Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
             }
-    }
-    
-    
-    
+    } 
 }
 
 struct ContentView_Previews: PreviewProvider {
